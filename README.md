@@ -1,27 +1,27 @@
-[![Python 3.9](https://github.com/softwaresaved/international-survey-2018/actions/workflows/python-package.yml/badge.svg)](https://github.com/softwaresaved/international-survey-2018/actions/workflows/python-package.yml)
+[![Python 3.9](https://github.com/keshavaspanda/international-survey-2018/actions/workflows/python-package.yml/badge.svg)](https://github.com/softwaresaved/international-survey-2018/actions/workflows/python-package.yml)
 
-# RSE International Survey Analysis
+# Teaching Research Faculty Survey Analysis
 
-This repository is used to analyse international surveys conducted by the Software Sustainability Institute.
+This repository is used to analyse  surveys conducted by the AI for Education Lab.
 
-We ran the **first survey in 2016**, which provided an insight into the demographics, job satisfaction, and practices of research software engineers (RSEs) in the UK. To support and broaden this work, the institute will conduct the survey at regular intervals and extend the geographical coverage to facilitate inter-country comparisons. The results of the surveys, anonymised and open licensed, will act as a a valuable resource to understand and improve the working conditions for RSEs.
+We ran the **first survey in 2024**, which provided an insight into the demographics, job satisfaction, and practices of Teaching and Research Faculty (TRF) across BITS campuses related to use of AI in Education. To support and broaden this work, the institute will conduct the survey at regular intervals and extend the geographical coverage to facilitate inter-country comparisons. The results of the surveys, anonymised and open licensed, will act as a a valuable resource to understand and improve the working conditions for TRFs using AI.
 
-In **2017** we also surveyed Canadian RSEs and we added four countries, Germany, Netherlands, South Africa and USA. Our thanks to our partners: Scott Henwood (Canada), Stephan Janosch and Martin Hammitzsch (Germany), Ben van Werkhoven and Tom Bakker (Netherlands), Anelda van der Walt (South Africa) and Daniel Katz and Sandra Gesing (USA).
+Our thanks to our partners: Firstname LastName (Location), FirstName LastName and FirstName LastName (Location)....
 
-Since **2018** we have worked differently and created a survey for all countries (rather than one survey for each one).
+We have created a survey for all locations (rather than one survey for each one).
 
-This site covers the **2022** survey results.
+This site covers the **2024** survey results.
 
 
 ## Setup
 
-This repository is only for the survey analysis. Here's how to reproduce the analysis on your own computer. The following instructions only apply for the 2018 and 2022 surveys.
+This repository is only for the survey analysis. Here's how to reproduce the analysis on your own computer. The following instructions only apply for the 2024 surveys.
 
 To reproduce the results on your machine, first clone the repository and setup
 the Python virtual environment:
 
 ```bash
-git clone --recurse-submodules https://github.com/softwaresaved/international-survey-2022
+git clone --recurse-submodules https://github.com/keshavaspanda/international-survey-2022
 cd international-survey-2022
 python -m venv venv  # use python3 if your default python is still Python 2
 source venv/bin/activate
@@ -39,13 +39,13 @@ export RSE_SURVEY_FIGURE_DPI=300  # optional, set dpi for png or pdf output form
 
 ### Generating the full report
 
-You can generate the full report (other than the country specific reports) by running:
+You can generate the full report (other than the location specific reports) by running:
 
 ```bash
 python run.py
 ```
 
-Country reports should be generated _after_ the section specific reports (do not replace `country` with a specific country, this will generate all country reports):
+Location reports should be generated _after_ the section specific reports (do not replace `location` with a specific location, this will generate all country reports):
 
 ```bash
 python run.py country
@@ -99,52 +99,32 @@ So for example to generate the current-employment section: `python run.py curren
 
 ## Contributors
 
-Here is a list of contributors for the 2022 version of the survey (last name alphabetic order). They are also mentioned in the [.zenodo.json](https://github.com/softwaresaved/international-survey/blob/master/.zenodo.json) to be automatically added to the DOI.
+Here is a list of contributors for the 2024 version of the survey (last name alphabetic order). They are also mentioned in the [.zenodo.json](https://github.com/softwaresaved/international-survey/blob/master/.zenodo.json) to be automatically added to the DOI.
 
-- Radovan Bast, Norway/Nordics
-- Alex Botzki, Belgium
-- Jeff Carver, US
-- Ian Cosden, US
-- Steve Crouch, UK
-- Florencia D’Andrea, Argentina
-- Abhishek Dasgupta, UK
-- William Godoy, US
-- Alejandra Gonzalez-Beltran, Argentina
-- Ulf Hamster, Germany
-- Scott Henwood, Canada
-- Simon Hettrick, UK
-- Patric Holmvall, Sweden/Nordics
-- Stephan Janosch, Germany
-- Thibault Lestang, France
-- Nick May, New Zealand
-- Olivier Philippe, UK
-- Johan Philips, Belgium
-- Nooriyah Poonawala-Lohani, New Zealand
-- Paul Richmond, UK
-- Manodeep Sinha, Australia
-- Florian Thiery, Germany
-- Ben van Werkhoven, Netherlands
-- Claire Wyatt, UK
-- Qian Zhang, Canada
-
+- FirstName LastName, Location
+- FirstName LastName, Location
+- FirstName LastName, Location
+- FirstName LastName, Location
+- FirstName LastName, Location
+- FirstName LastName, Location
+- FirstName LastName, Location
+- FirstName LastName, Location
 ## Licence 
 
 This repository contains code and public data. We have different licence for each
-* The code is released under [BSD 3-Clause License](https://github.com/softwaresaved/international-survey/blob/master/LICENSE.md).
-* The data stored in this repository is under the [CC BY 2.5 SCOTLAND](https://github.com/softwaresaved/international-survey/blob/master/LICENSE_FOR_DATA).
+* The code is released under [BSD 3-Clause License](https://github.com/keshavaspanda/international-survey/blob/master/LICENSE.md).
+* The data stored in this repository is under the [CC BY 2.5 SCOTLAND](https://github.com/keshavaspanda/international-survey/blob/master/LICENSE_FOR_DATA).
 
-The repository is also archived on Zenodo: <https://doi.org/10.5281/zenodo.6884882>.
+The repository is also archived on Zenodo: <https://doi.org/10.5281/zenodo.xxxxxxx>.
 If you want to cite this work and need a citation in a specific format, you can use the citation service on the zenodo.
 
 ## Citations
 
-The citation for the 2022 version is:
+The citation for the 2024 version is:
 
-> Simon Hettrick, Radovan Bast, Alex Botzki, Jeff Carver, Ian Cosden, Steve Crouch, Florencia D’Andrea, Abhishek Dasgupta, William Godoy, Alejandra Gonzalez-Beltran, Ulf Hamster, Scott Henwood, Patric Holmvall, Stephan Janosch, Thibault Lestang, Nick May, Olivier Philippe, Johan Philips, Nooriyah Poonawala-Lohani, Paul Richmond, Manodeep Sinha, Florian Thiery, Ben van Werkhoven, Claire Wyatt & Qian Zhang. "RSE Survey 2022", Pre-final release for 2022 results (Version 2022-v0.9.0). Zenodo DOI: <https://doi.org/10.5281/zenodo.6884882>. Check the repository's [citation file](CITATION.cff).
+> - FirstName LastName, FirstName LastName, FirstName LastName, FirstName LastName, FirstName LastName, FirstName LastName, FirstName LastName, FirstName LastName, FirstName LastName. "TRF Survey 2024", Pre-final release for 2024 results (Version 2024-v0.9.0). Zenodo DOI: <https://doi.org/10.5281/zenodo.xxxxxxx>. Check the repository's [citation file](CITATION.cff).
 
-The citation for the 2018 version is:
-> Olivier Philippe, Martin Hammitzsch, Stephan Janosch, Anelda van der Walt, Ben van Werkhoven, Simon Hettrick, … Manodeep Sinha. (2019, March 6). softwaresaved/international-survey: Public release for 2018 results (Version 2018-v.1.0.2). Zenodo. <http://doi.org/10.5281/zenodo.2585783>
 
 ## Funders
 
-The Software Sustainability Institute is supported by EPSRC grant EP/H043160/1 and EPSRC/ESRC/BBSRC grant EP/N006410/1, with additional project funding from Jisc and NERC. Collaboration between the universities of Edinburgh, Manchester, Oxford and Southampton.
+The AI for Education Lab is supported by Work Integrated Learning Program, with additional project funding from XXX and XXX. Collaboration between the universities of AAA, BBB, CCC and DDD.
